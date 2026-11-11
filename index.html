@@ -1,14 +1,92 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rivayat Cloud</title>
-<style>body{font:17px/1.6 system-ui,sans-serif;max-width:640px;margin:48px auto;padding:0 16px;color:#222;background:#fff}h1{font-size:26px}h2{font-size:19px;margin-top:32px}</style>
-</head><body>
-<h1>Rivayat Cloud</h1>
-<p>Rivayat Cloud is a private tool used by the owner of the Rivayat YouTube channel. Each day it uploads the channel's own finished video to the owner's Google Drive, so the video can be published to the owner's YouTube channel.</p>
-<h2 id="privacy">Privacy policy</h2>
-<p>Rivayat Cloud is used only by the channel owner, with the owner's own Google account. It asks for one Google permission: access to files it creates in Google Drive (scope <code>drive.file</code>). It cannot see any other files.</p>
-<p>It uploads only video files made for the channel, makes a temporary view link so the video can be published, then removes that link. It collects, stores, sells and shares no personal data, and it shows no ads.</p>
-<p>Access can be removed at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
-<h2 id="terms">Terms</h2>
-<p>This tool is provided for the channel owner's own use, as is, with no warranty.</p>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rivayat | Indian folktales, animated</title>
+<meta name="description" content="Rivayat tells well-known Indian and Arabian Nights folktales as short animated films: Akbar-Birbal, Vikram-Betal, Panchatantra, Alif Laila. Hindi narration, Hinglish subtitles.">
+<meta property="og:title" content="Rivayat | Indian folktales, animated">
+<meta property="og:description" content="Short animated folktales in Hindi: Akbar-Birbal, Vikram-Betal, Panchatantra, Alif Laila.">
+<style>
+  :root{
+    --paper:#f1e9da; --card:#fbf6ea; --ink:#2a1d17; --muted:#5b4034; --maroon:#8a1f2b; --peacock:#1f7a8c; --line:#d9ccb4; --onmaroon:#fff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#1b1512; --card:#251d18; --ink:#f3ead9; --muted:#c9b9a2; --maroon:#f0a3a8; --peacock:#6ec3d3; --line:#3b2f27; --onmaroon:#1b1512; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  a{color:var(--peacock)}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  header{padding:56px 0 32px;border-bottom:1px solid var(--line)}
+  .brand{font:700 15px/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--maroon)}
+  h1{font:800 clamp(34px,6vw,54px)/1.1 Georgia,"Times New Roman",serif;margin:14px 0}
+  .lead{font-size:19px;color:var(--muted);max-width:620px;margin:0}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  .btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--maroon)}
+  .btn.primary{background:var(--maroon);color:var(--onmaroon)}
+  .btn.ghost{color:var(--maroon)}
+  section{padding:40px 0;border-bottom:1px solid var(--line)}
+  h2{font:700 26px/1.2 Georgia,"Times New Roman",serif;margin:0 0 14px}
+  .player{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;border:1px solid var(--line)}
+  .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .note{font-size:15px;color:var(--muted);margin-top:12px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+  .chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:15px}
+  .tool{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 22px 18px}
+  .tool h3{font-size:18px;margin:20px 0 6px}
+  footer{padding:28px 0 48px;font-size:14px;color:var(--muted)}
+  code{background:var(--paper);padding:1px 6px;border-radius:6px;font-size:.92em}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">Rivayat</div>
+    <h1>Folktales you half remember, told in full.</h1>
+    <p class="lead">Short animated films of well-known Indian and Arabian Nights stories: Akbar-Birbal, Vikram-Betal, Panchatantra, Singhasan Battisi and Alif Laila. Hindi narration, Hinglish subtitles, hand-painted look.</p>
+    <div class="cta">
+      <a class="btn primary" href="#watch">Watch the films</a>
+      <a class="btn ghost" href="https://www.youtube.com/channel/UCwaGDvRPeIrkGKpM9QRcT2w?sub_confirmation=1" rel="noopener">Subscribe on YouTube</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="watch">
+    <h2>Watch</h2>
+    <div class="player">
+      <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=UUwaGDvRPeIrkGKpM9QRcT2w" title="Rivayat films" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <p class="note">Every public film from the channel appears here automatically. New films are added daily. <a href="https://www.youtube.com/channel/UCwaGDvRPeIrkGKpM9QRcT2w" rel="noopener">Open the channel on YouTube</a>.</p>
+  </section>
+
+  <section id="about">
+    <h2>About the films</h2>
+    <p>Each film retells one story in about a minute and a half and ends on a question to argue about in the comments: was the hero right, who was the greatest fool, who really did it?</p>
+    <ul class="chips">
+      <li>Akbar-Birbal</li><li>Vikram-Betal</li><li>Panchatantra</li><li>Singhasan Battisi</li><li>Alif Laila (Arabian Nights)</li><li>Tenali Raman</li>
+    </ul>
+  </section>
+
+  <section id="tool">
+    <h2>Rivayat Cloud</h2>
+    <div class="tool">
+      <p>Rivayat Cloud is the small private tool behind the channel. Each day it uploads the channel's own finished video to the owner's Google Drive, so the video can be published to the owner's YouTube channel.</p>
+      <h3 id="privacy">Privacy policy</h3>
+      <p>Rivayat Cloud is used only by the channel owner, with the owner's own Google account. It asks for one Google permission: access to files it creates in Google Drive (scope <code>drive.file</code>). It cannot see any other files.</p>
+      <p>It uploads only video files made for the channel, makes a temporary view link so the video can be published, then removes that link. It collects, stores, sells and shares no personal data, and it shows no ads.</p>
+      <p>This website sets no cookies of its own and has no analytics. The video player above is YouTube's privacy-enhanced embed (<code>youtube-nocookie.com</code>); it loads from YouTube when you scroll to it, and YouTube's own privacy policy applies to it.</p>
+      <p>Access can be removed at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+      <h3 id="terms">Terms</h3>
+      <p>This tool is provided for the channel owner's own use, as is, with no warranty.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Rivayat. Stories retold from public-domain folk traditions. Pictures, voice and music made for the channel.</div>
+</footer>
+</body>
+</html>
